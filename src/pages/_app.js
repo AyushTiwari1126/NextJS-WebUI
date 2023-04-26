@@ -1,7 +1,14 @@
 import '@/styles/globals.css'
-import navbar from '../../components/navbar'
+import Navbar from '../../components/Navbar'
 
 
 export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return <>
+  <Navbar/>
+  <Component {...pageProps} />
+  </>
+  
+  console.log("This is _app.js file")
+  
+  
 }

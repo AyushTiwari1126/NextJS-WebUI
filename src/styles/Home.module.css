@@ -3,8 +3,8 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
+  padding: 60px;
+  min-height: 70vh;
 }
 
 .description {
@@ -41,9 +41,11 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
+  grid-template-columns: repeat(4, minmax(15%, auto));
   width: var(--max-width);
   max-width: 100%;
+  text-align: inherit;
+  justify-content: space-evenly
 }
 
 .card {
@@ -104,6 +106,10 @@
   transform: translateZ(0);
 }
 
+.ourservices{
+  text-align: center;
+}
+
 .logo {
   position: relative;
 }
@@ -131,18 +137,11 @@
     padding: 4rem;
   }
 
-  .mygrid {
-    grid-template-columns: 1fr;
-    margin-bottom: 120px;
-    max-width: 720px;
-    text-align: center;
-  }
-
 
   .grid {
-    grid-template-columns: 1fr;
-    margin-bottom: 120px;
-    max-width: 320px;
+    grid-template-columns: 3fr;
+    margin-bottom: 320px;
+    max-width: 170px;
     text-align: center;
   }
 
@@ -164,7 +163,7 @@
   }
 
   .description {
-    font-size: 0.8rem;
+    font-size: 0.2rem;
   }
 
   .description a {
@@ -200,7 +199,7 @@
     pointer-events: none;
     inset: auto 0 0;
     padding: 2rem;
-    height: 200px;
+    /* height: 200px; */
     background: linear-gradient(
       to bottom,
       transparent 0%,
@@ -213,7 +212,7 @@
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
   .grid {
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(3, 50%);
   }
 }
 
@@ -223,7 +222,7 @@
   }
 
   .logo {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
+    filter: invert(5) drop-shadow(0 0 0.1rem #ffffff);
   }
 }
 
@@ -234,4 +233,20 @@
   to {
     transform: rotate(0deg);
   }
+}
+
+.navbar {
+  margin: 40px;
+  padding: 30px;
+  font-size: larger;
+}
+
+.navbar ul{
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul li{
+  margin: 0 24px;
+  list-style: none;
 }
